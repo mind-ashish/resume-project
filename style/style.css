@@ -1,0 +1,496 @@
+
+
+body{
+	margin:0px;  /*body usually hv some margins
+	so to remove them and give urs.*/
+}
+#body-header{
+	
+	height:65vh;
+	background-image:url(../static/header-img.jpg);
+	background-size:cover;
+	background-position: centre;
+	opacity:0.8;
+	background-attachment: fixed;  /*for parallex*/
+}
+.text-align{
+	text-align: center;
+}
+#header-list{
+	list-style: none;
+	/*position: absolute;
+*/	margin:0px;  /*there is some default padding/magin in unoreredlist to remove that*/
+}
+
+#header-list li{
+	display: inline-block;  /*or inline*/
+	margin:20px 20px 20px 0px;
+
+}
+#header-list a{
+	color:white;
+	text-decoration: none;
+}
+#header-list a:hover {
+	color:black;
+	border-bottom:1px solid black;
+	transition: color 0.5s , border-bottom 0.5s;
+
+}
+#title{
+	/*text-align: center;
+*/	margin-top: 20vh;
+}
+#title-text{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+#title-text:hover{
+	
+	color: black;
+	/*transition: color 0.5s;*/
+	border-bottom-width: 2px;
+	transition: color 0.5s;
+	
+}
+#social-media-buttons li{
+
+	display: inline;
+
+	
+}
+
+#social-media-buttons{
+	/*text-align: center;
+*/	margin-top: 1vh;
+	/*position: absolute;
+	top:50%;
+	left:20%;*/
+}
+
+#social-media-buttons li a{
+	text-decoration: none;
+
+}
+
+#social-media-buttons li a i{
+color:white;  /*color of icons*/
+padding: 10px;
+font-size: 1rem;   
+border-radius: 50%;  /*to make icons circular in shape, which is visible 
+on hover*/
+}
+
+#social-media-buttons li a i:hover{
+box-shadow: 0px 0px 6px 4px rgba(226,226,226,0.8);    
+/*transition: box-shadow 1s;*/
+color:black; 
+}
+
+
+/*.......................................................................................*/
+/*about section*/
+
+#about{
+	height:auto;
+	width:100%;
+	position: relative;   
+	
+}
+#my-image{
+
+	height:12rem;   
+	width:12rem;
+	margin:auto;  /*to bring image to centre*/
+	margin-top: -15vh; /*giving negative margin to get half of image in header section*/
+
+}
+#my-image img{
+	opacity: 1;
+	height:100%;  
+	width:100%;
+	border-radius:50%;  /*to give circular shape to rectangular image*/
+    box-shadow: 0px 0px 3px 2px white;  /*to give shadow around corners*/
+
+}
+#my-image img:hover{
+    box-shadow: 0px 0px 3px 2px black;  /*to give shadow around corners*/
+}
+#about .text{   
+	width: 80%;  
+	margin: 30px auto;  
+
+}
+
+
+
+section{
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;  
+	align-items: center; 
+}
+section:nth-child(2n){
+	background-color: grey;
+}
+section:nth-child(2n+1){
+	background-color: white;
+}
+section:nth-child(2){ 
+	background-color: #f4f2fd;  
+}
+
+
+
+.section-heading{
+	width:auto; 
+	font-weight: 400;
+	padding:20px 10px 10px; 
+}
+.section-heading span{
+font-size: 2rem;
+}
+
+.skills-display{ 
+	height: 50%;
+	width:60%;  
+
+	
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	justify-content: space-between;
+
+}
+
+.skill-progress{
+	position: relative;
+	width:12rem;
+	height: 2.5rem;
+	background-color: lightgrey;
+	/*to give that shape of bar*/
+	border-radius: 2rem;
+	box-shadow: 0px 0px 4px 4px lightgrey;  /*to give shadow to each bar*/ 
+	border:2px solid black;
+
+
+}
+.skill-progress>div:not(#hundred){   
+border-radius: 20px 0px 0px 20px;   
+}
+
+/*commomn -margin classes*/
+.mb75px{
+	margin-bottom: 75px;
+}
+
+/*common color class*/
+.mb-blue{
+	background-color: #2857a4;
+}
+
+/*font-color-blue class*/
+.set-blue{
+	color:#2857a4;
+}
+
+.eighty-five-percent{
+	width: 85%;  
+	height: inherit; 
+}
+
+
+.skill-name span{
+	position: absolute;
+	left: 10px;
+	top: 0.6rem;
+color:white;
+font-size: 1rem;
+}
+
+
+
+
+/*similarly for other bars*/
+
+.hundred-percent{
+	border-radius: 20px 20px 20px 20px;  
+	width: 100%;  
+	height: inherit; /*to inherit the height of parent as it is*/
+}
+
+.seventy-five-percent{
+	width: 75%;
+	height: inherit;
+}
+
+
+.ninety-percent{
+	width: 90%;
+	height: inherit;
+
+}
+
+.forty-percent{
+	width: 40%;
+	height: inherit;
+
+}
+
+.fifty-five-percent{
+	width: 55%;
+	height: inherit;
+
+}
+
+/*..........................................................*/
+/*portfolio section*/
+
+#portfolio{
+	background-color: white;
+	height: auto;  
+}
+#portfolio-images-container{
+	height: 60%;   
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 70px;
+
+}
+
+/*before*/
+.img-box{   
+	height: 200px;
+	width: 300px;
+	margin-bottom:20px;
+	position: relative;
+}
+.img-box img{
+	opacity: 1;  
+	height: 100%;
+	width: 100%;
+	}
+.text-over{
+	opacity: 0;
+	background-color: lightgrey;   
+	height: 200px;
+	width: 300px;
+	position: absolute;
+	
+	top:0%;
+	left:0%;
+
+
+}
+.text-over p{
+	color: black;
+	font-weight: 900;
+	margin: 20% 10% auto;  
+}
+
+
+.img-box:hover .img-box img{
+opacity: 0.2;  
+transition: .5s ease;
+
+}
+.img-box:hover .text-over{  
+	opacity:0.9;
+	transition: .5s ease;  
+}
+.img-box:hover .text-over p{  
+	opacity:1;
+	transition: .5s ease;
+}
+
+
+
+#contact{ 
+	background-image: linear-gradient(20deg,#2857a4 20%, #403066 70%);
+	height: auto;   
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.set-white{
+	color:white;
+	margin-bottom: 50px;
+}
+#form-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;    
+	width: 80%;
+	height:60%;
+	justify-content: space-between;
+	align-items: baseline;  
+}
+.form{
+	height: 90%;
+	width: 50%;
+}
+.get-in-touch{
+	height: 90%;
+	width: 45%;
+	color:white; 
+}
+.get-in-touch ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+.get-in-touch li{
+	margin-bottom: 4px;
+}
+.get-in-touch span{
+	margin-right: 4px;
+}
+
+
+
+form input, textarea{
+	border:none;
+}
+form:focus{
+	outline: none;
+}
+form textarea:focus{
+	outline:none;
+}
+form input:focus{
+	outline:none;
+}
+form button:focus{
+	outline: none;
+}
+form button{
+	border:none;
+}
+
+#user-name, #mail{
+	padding-bottom: 5px;  
+	width: 90%;
+	background-color: inherit;
+	color:white;
+	font-size: 1.3rem;
+	margin-bottom: 5%;
+	border-bottom: 2px solid white;
+}
+#text-area{  
+	width: 90%;
+	background-color: inherit;
+	color:white;
+	font-size: 1.3rem;
+	margin-bottom: 5%;
+	border-bottom: 2px solid white;
+}
+#submit-button{
+	height: 2.5rem;  
+	width:30%;
+	margin-top: 6%;
+	margin-left: 30%;   
+	border:2px solid white;
+	background-color: inherit;
+}
+
+#submit-button>div{
+	color:white;   
+	font-weight: 400;  
+	font-size: 1.3em;   
+}
+
+
+
+#experience{
+	width: 100%;
+	height: auto;
+}
+
+.timeline{
+	position: relative;   
+	width: 75%;
+	margin-bottom: 40px;
+
+}
+.timeline-box{
+	position: relative; 
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+	margin: 5px;
+}
+
+.timeline-box:nth-child(2n){
+	left: 53%;   
+}
+
+.timeline-divider{
+	
+	position: absolute;
+	
+	height: 75%;
+	width: 0%;
+	border:1.7px dashed #0096fa6b;
+
+	top:10%;
+	left:50%;  
+
+}
+
+
+.timeline-traveller{
+	
+	position: sticky;
+	top:25%; 
+
+	transform: rotate(90deg);   
+	z-index: 2;
+}
+
+
+
+
+
+
+.timeline-box::after{
+	content: ''; 
+height:0.5rem;
+width: 0.5rem;
+background-color: grey;
+border-radius: 50%;
+
+
+position: absolute;
+/*also to specify their position*/
+top:30%;
+right:-12.5%;
+z-index: 1;
+}
+
+
+
+.timeline-box:nth-child(2n)::after{  
+	left:-9.3%;
+	top:45%;
+	z-index: 1;
+}
+
+
+
+#education{
+	background-color: lightgrey;
+	height: auto;
+}
+
+
+
+
+
+
