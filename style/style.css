@@ -198,10 +198,10 @@ border-radius: 20px 0px 0px 20px;
 	color:#2857a4;
 }
 
-.eighty-five-percent{
+/* .eighty-five-percent{
 	width: 85%;  
 	height: inherit; 
-}
+} */
 
 
 .skill-name span{
@@ -217,13 +217,14 @@ font-size: 1rem;
 
 /*similarly for other bars*/
 
-.hundred-percent{
+/* .hundred-percent{
 	border-radius: 20px 20px 20px 20px;  
 	width: 100%;  
-	height: inherit; /*to inherit the height of parent as it is*/
-}
+	height: inherit; 
+} */
 
-.seventy-five-percent{
+
+/* .seventy-five-percent{
 	width: 75%;
 	height: inherit;
 }
@@ -245,7 +246,7 @@ font-size: 1rem;
 	width: 55%;
 	height: inherit;
 
-}
+} */
 
 /*..........................................................*/
 /*portfolio section*/
@@ -492,5 +493,13 @@ z-index: 1;
 
 
 
+/* For Animations using js */
 
-
+.inner{
+    
+    height:inherit;
+    width:55%;
+    
+    
+    /* so that it is curved from left side only */
+}
