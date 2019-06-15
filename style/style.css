@@ -498,8 +498,7 @@ z-index: 1;
     
     height:inherit;
     width:55%;
-    background-color: rgb(180, 180, 180);
-    border-radius: 30px 0px 0px 30px;
+    
     
     /* so that it is curved from left side only */
 }
