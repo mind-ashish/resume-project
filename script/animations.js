@@ -1,4 +1,5 @@
 
+(function(){
 //fetching things...........
 var divs=document.querySelectorAll(".inner");  
 //intial & final widths array for animation
@@ -63,6 +64,9 @@ for(let i=0;i<divs.length;i++){
 window.addEventListener('scroll',onScrolling);
 //call fn onscrolling on each scroll.
  
+})();
+
+
 
 
 
